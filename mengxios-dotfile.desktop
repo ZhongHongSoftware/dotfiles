@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Desktop(Please Use This)
+Comment=Start a Hyprland Wayland session with mengxios dotfiles auto-deployed
+Exec=mengxios-dotfile-session
+TryExec=start-hyprland
+Type=Application
+DesktopNames=Desktop(Hyprland For MengXiOS)
+Keywords=wayland;compositor;hyprland;dotfile;

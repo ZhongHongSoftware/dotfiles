@@ -1,0 +1,17 @@
+#!/bin/bash
+export XDG_SESSION_TYPE=wayland
+export XDG_CURRENT_DESKTOP=hyprland
+export QT_QPA_PLATFORM="wayland;xcb"
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+
+DOTFILES_SRC="/usr/share/mengxios-dotfile"
+CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}"
+CONFIG_DIRS=("DankMaterialShell" "cava" "fastfetch" "fish" "kitty" "hypr" "nvim" "dconf" "dgop")
+CONFIG_FILES=("wallpaper.jpg")
+
+mkdir -p "$CONFIG_DIR"
+for d in "${CONFIG_DIRS[@]}"; do [[ ! -d "$CONFIG_DIR/$d" ]] && cp -r "$DOTFILES_SRC/$d" "$CONFIG_DIR/$d"; done
+for f in "${CONFIG_FILES[@]}"; do [[ ! -f "$CONFIG_DIR/$f" ]] && cp "$DOTFILES_SRC/$f" "$CONFIG_DIR/$f"; done
+
+exec start-hyprland
