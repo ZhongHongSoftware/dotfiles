@@ -40,10 +40,6 @@ sudo nano /etc/pacman.conf
 [mengxios]
 Server = http://repo.zhsoft.tech/$arch
 
-# 导入 GPG 密钥（如需要）
-sudo pacman-key --recv-keys 你的密钥ID
-sudo pacman-key --lsign-key 你的密钥ID
-
 # 更新软件包数据库
 sudo pacman -Sy
 ```
