@@ -1,11 +1,11 @@
 format = 2
 pkgname = mengxios-dotfile
 pkgbase = mengxios-dotfile
-pkgver = 1.5.0-1
+pkgver = 1.6.0-1
 pkgarch = any
-pkgbuild_sha256sum = f562ca3589f7f95aa3f04f13990f60a040820afa4f7d7cf039fbd0c132e071f8
+pkgbuild_sha256sum = 5469e1ecda6f6e7f72b67a1f47bef41adccc73d93c82a2254792fb12530f9c43
 packager = Unknown Packager
-builddate = 1775111339
+builddate = 1775127887
 builddir = /home/zeta/mengxios-dotfile-full-deps-source
 startdir = /home/zeta/mengxios-dotfile-full-deps-source
 buildtool = makepkg

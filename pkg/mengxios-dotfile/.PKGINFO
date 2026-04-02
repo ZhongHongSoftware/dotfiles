@@ -3,18 +3,19 @@
 pkgname = mengxios-dotfile
 pkgbase = mengxios-dotfile
 xdata = pkgtype=pkg
-pkgver = 1.5.0-1
+pkgver = 1.6.0-1
 pkgdesc = Mengxio's personal dotfiles for hyprland, with full dependency injection
 url = 
-builddate = 1775111339
+builddate = 1775127887
 packager = Unknown Packager
-size = 3472922
+size = 3472976
 arch = any
 depend = hyprland
 depend = kitty
 depend = dolphin
 depend = firefox
 depend = neovim
+depend = libnotify
 depend = fastfetch
 depend = sddm
 depend = polkit-kde-agent
